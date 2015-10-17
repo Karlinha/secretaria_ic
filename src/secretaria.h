@@ -6,11 +6,17 @@
 #define PI 3.1415
 #define NUM_TEX 2
 
-void draw_wall(float x1,float y1, float z1,
+void draw_quads(float x1,float y1, float z1,
 			float x2, float y2, float z2,
 			float x3, float y3, float z3,
 			float x4, float y4, float z4, int tex_index);
 
+void draw_cube(float xpos, float ypos, float zpos,
+			  float esp, float alt, float larg,
+			  float tam, int wire);
+
+void draw_wall();
+void draw_object();
 void display();
 void keyboard(unsigned char key, int x, int y);
 void special(int key, int x, int y);
